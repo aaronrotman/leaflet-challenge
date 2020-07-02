@@ -18,7 +18,7 @@ var lightMap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{
 // Add the base layer to the map
 lightMap.addTo(myMap);
 
-// Create the legend
+//Create the legend
 var legend = L.control({ position: "topright" });
 legend.onAdd = function() {
     var div = L.DomUtil.create("div", "legend");
@@ -59,6 +59,6 @@ d3.json(dataUrl).then(data => {
             fillColor: color,
             fillOpacity: 0.5,
             radius: magnitude * 3000,
-        }).bindPopup(`<h1>Magnitude: ${magnitude}</h1><hr><h3>${earthquakes[i].properties.place}</h3><hr><a href="${earthquakes[i].properties.url}">Read More</a>`).addTo(myMap);
+        }).bindPopup(`<h1>Magnitude: ${magnitude}</h1><hr><h3>${earthquakes[i].properties.place}</h3><hr><a href="${earthquakes[i].properties.url} "target="_blank">Read More</a>`).addTo(myMap);
     };
 });
