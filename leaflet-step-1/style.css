@@ -1,0 +1,17 @@
+html,
+body,
+#map-zone {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+a {
+    font-size: 20px;
+}
+.legend {
+    background-color: lightgrey;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
